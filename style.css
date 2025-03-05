@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('file:///C:/Users/giles/Desktop/TODOLIST/todo-list-main/IMAGE/9.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+    font-family: "Amasis MT Pro Black", sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.container {
+    flex-grow: 1; /* Pushes the footer down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Add this to the head section of your HTML for the font */
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+h1 {
+    color: #fff; /* White color */
+    font-family: '/* Add this to the head section of your HTML for the font */
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+/* Applying Algerian font to the heading */
+h1 {
+    font-family: 'Algerian', sans-serif; /* Setting Algerian font */
+    font-size: 7rem; /* Double the normal size */
+    font-weight: bold; /* Bold font */
+    color: #fff; /* White color for better contrast */
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    margin-bottom: 20px;
+}
+}
+
+/* Animation for the h1 element */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1::before {
+    content: "🎉  "; /* Adding an emoji before the text */
+}
+
+h1::after {
+    content: " 🎯"; /* Adding another emoji after the text */
+}
+', sans-serif; /* Using the Poppins font */
+    font-size: 4rem; /* Increased font size */
+    font-weight: bold; /* Made the text bold */
+    text-align: center;
+    opacity: 1; /* Full opacity for better visibility */
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Added a subtle text shadow */
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-out; /* Adding animation */
+}
+
+/* Animation for the h1 element */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1::before {
+    content: "🎉  "; /* Adding an emoji before the text */
+}
+
+h1::after {
+    content: " 🎯"; /* Adding another emoji after the text */
+}
+
+
+
+
+form {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 2px solid #ff6ec7; /* Bright pink border */
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    transition: border 0.3s ease-in-out;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #a9a9a9;
+}
+
+.input:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+.todos {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.todos li {
+    border-top: 1px solid #f0f0f0;
+    padding: 1rem 2rem;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ffebf5;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.todos li:hover {
+    background-color: #ffabbd; /* Bright coral-pink hover */
+    transform: scale(1.05);
+}
+
+.todos li.completed {
+    color: #7d7d7d;
+    background-color: #d4edda;
+}
+
+.todos li.completed::after {
+    content: "✔️";
+    color: #008000;
+    margin-left: 10px;
+}
+
+.info {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+    background-color: #ff6f61;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer {
+    background-color: black; /* Kept background black */
+    color: #c71585; /* Dark pink text */
+    padding: 1.5rem; /* Slightly increased padding for better spacing */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem; /* Increased font size to roughly twice the original */
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
+    margin-top: 0px;
+}
