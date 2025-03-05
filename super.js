@@ -13,6 +13,8 @@ if (todos) {
     todos.forEach(todo => addTodo(todo));
 
 }
+
+
 form.addEventListener('submit', (e) => {
 
     e.preventDefault();  
@@ -64,7 +66,9 @@ function addTodo(todo = null) {
             updateLS();
         
         });
-  todosUl.appendChild(todoEl);
+
+
+        todosUl.appendChild(todoEl);
 
         
 
@@ -103,3 +107,4 @@ function updateLS() {
     localStorage.setItem('todos', JSON.stringify(todos));
 
 }
+
