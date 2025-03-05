@@ -26,3 +26,38 @@ body {
     width: 100%;
     max-width: 400px;
 }
+/* Add this to the head section of your HTML for the font */
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+h1 {
+    color: #fff; /* White color */
+    font-family: '/* Add this to the head section of your HTML for the font */
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+/* Applying Algerian font to the heading */
+h1 {
+    font-family: 'Algerian', sans-serif; /* Setting Algerian font */
+    font-size: 7rem; /* Double the normal size */
+    font-weight: bold; /* Bold font */
+    color: #fff; /* White color for better contrast */
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    margin-bottom: 20px;
+}
+}
+
+/* Animation for the h1 element */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1::before {
+    content: "🎉  "; /* Adding an emoji before the text */
+}
