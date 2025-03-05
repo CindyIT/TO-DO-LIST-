@@ -26,6 +26,7 @@ body {
     width: 100%;
     max-width: 400px;
 }
+
 /* Add this to the head section of your HTML for the font */
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
@@ -61,6 +62,7 @@ h1 {
 h1::before {
     content: "🎉  "; /* Adding an emoji before the text */
 }
+
 h1::after {
     content: " 🎯"; /* Adding another emoji after the text */
 }
@@ -142,4 +144,51 @@ form {
     background-color: #ffebf5;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease;
     border-radius: 10px;
+}
+
+.todos li:hover {
+    background-color: #ffabbd; /* Bright coral-pink hover */
+    transform: scale(1.05);
+}
+
+.todos li.completed {
+    color: #7d7d7d;
+    background-color: #d4edda;
+}
+
+.todos li.completed::after {
+    content: "✔️";
+    color: #008000;
+    margin-left: 10px;
+}
+
+.info {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+    background-color: #ff6f61;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer {
+    background-color: black; /* Kept background black */
+    color: #c71585; /* Dark pink text */
+    padding: 1.5rem; /* Slightly increased padding for better spacing */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem; /* Increased font size to roughly twice the original */
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
+    margin-top: 0px;
 }
